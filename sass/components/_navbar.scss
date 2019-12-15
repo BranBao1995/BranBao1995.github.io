@@ -1,0 +1,64 @@
+.navbar {
+
+    grid-row: 1 / 2;
+    background-color: $font-color-6;
+
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
+
+
+    &__list {
+
+        list-style: none;
+        padding: 1.5rem 2rem;
+        display: flex;
+
+        li {
+
+            margin-right: 3rem;
+
+        }
+
+        a,
+        a:active,
+        a:visited {
+
+            text-decoration: none;
+            color: white;
+            font-size: $font-size-2;
+            font-family: $font-style-1;
+            padding-bottom: .2rem;
+
+            transition: color .3s;
+
+            @media only screen and (max-width: 26.57em) {
+
+                font-size: 1.3rem;
+
+            }
+
+            &:hover {
+
+                color: $font-color-4;
+                border-bottom: .2rem solid $font-color-4;
+
+            }
+
+        }
+
+
+    }
+
+}
+
+.sticky {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 100;
+
+}

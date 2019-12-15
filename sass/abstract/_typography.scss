@@ -1,0 +1,288 @@
+@import "./variables.scss";
+
+.welcome__text--1 {
+
+    font-family: $font-style-1;
+    font-size: $font-size-1;
+
+    color: white;
+
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: 66.25em) {
+
+        font-size: $font-size-3;
+        margin-bottom: 3rem;
+
+    }
+
+    @media only screen and (max-width: 43.75em) {
+
+        font-size: $font-size-1;
+        margin-bottom: 3rem;
+
+    }
+
+    @media only screen and (max-width: 26.57em) {
+
+        font-size: $font-size-3;
+
+    }
+
+
+    span {
+
+        font-family: $font-style-2;
+        font-size: 4.6rem;
+        color: $font-color-1;
+
+        @media only screen and (max-width: 66.25em) {
+
+            font-size: $font-size-1;
+    
+        }
+
+        @media only screen and (max-width: 43.75em) {
+
+            font-size: 4.6rem;
+    
+        }
+
+        @media only screen and (max-width: 26.57em) {
+
+            font-size: $font-size-3;
+
+        }
+
+    }
+
+}
+
+.welcome__text--2 {
+
+    font-family: $font-style-1;
+    font-size: $font-size-2;
+
+    color: white;
+
+    @media only screen and (max-width: 66.25em) {
+
+        text-align: center;
+        margin: 0 auto;
+
+        line-height: 1.5;
+
+    }
+
+    @media only screen and (max-width: 43.75em) {
+
+        width: 80%;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    @media only screen and (max-width: 26.57em) {
+
+        font-size: 1.4rem;
+
+    }
+
+
+}
+
+.about__about--text {
+
+    font-family: $font-style-1;
+    font-size: $font-size-1;
+    color: $font-color-2;
+    font-weight: medium;
+
+    @media only screen and (max-width: 20.32em) {
+
+        font-size: $font-size-2;
+
+    }
+
+}
+
+.about__myself__text {
+
+    margin-bottom: 2rem;
+
+    text-align: center;
+
+    font-size: $font-size-2;
+    font-family: $font-style-1;
+
+    @media only screen and (max-width: 43.75em) {
+
+        display: none;
+
+    }
+
+}
+
+.about__keywords__text {
+
+    width: 50%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    font-size: $font-size-2;
+    font-family: $font-style-1;
+
+    @media only screen and (max-width: 43.75em) {
+
+        font-size: 1.3rem;
+        line-height: 1.3;
+
+    }
+
+}
+
+.projects__header {
+
+    grid-row: 1 / 2;
+
+    text-align: center;
+    font-size: $font-size-1;
+    font-family: $font-style-1;
+
+    @media only screen and (max-width: 20.32em) {
+
+        font-size: $font-size-2;
+
+    }
+
+}
+
+.projects__1__text {
+    display: block;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+
+    text-align: center;
+    font-size: $font-size-3;
+    font-family: $font-style-1;
+    color: $font-color-4;
+
+    transition: all .4s;
+
+    @media only screen and (max-width: 83.75em) {
+
+        display: none;
+
+    }
+
+    @media only screen and (max-width: 64em) {
+
+        font-size: $font-size-2;
+
+    }
+
+    &__smallScreen {
+
+        text-align: center;
+        font-size: $font-size-2;
+        font-family: $font-style-1;
+        color: $font-color-6;
+
+        margin-bottom: 1.4rem;
+
+        @media only screen and (max-width: 40em) {
+
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+    
+        }
+
+        @media only screen and (max-width: 26.57em) {
+
+            font-size: 1.1rem;
+
+        }
+
+    }
+
+}
+
+.projects__2__text {
+
+    display: block;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+
+    text-align: center;
+    font-size: $font-size-3;
+    font-family: $font-style-1;
+    color: $font-color-4;
+
+    transition: all .4s;
+
+    @media only screen and (max-width: 83.75em) {
+
+        display: none;
+
+    }
+
+    @media only screen and (max-width: 64em) {
+
+        font-size: $font-size-2;
+
+    }
+
+    &__smallScreen {
+
+        text-align: center;
+        font-size: $font-size-2;
+        font-family: $font-style-1;
+        color: $font-color-6;
+
+        margin-bottom: 1.4rem;
+
+        @media only screen and (max-width: 40em) {
+
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+    
+        }
+
+        @media only screen and (max-width: 26.57em) {
+
+            font-size: 1.1rem;
+
+        }
+
+    }
+
+}
+
+.contact__header {
+
+    grid-row: 1 / 2;
+
+    text-align: center;
+
+    font-size: $font-size-1;
+    font-family: $font-style-1;
+    color: $font-color-5;
+
+    @media only screen and (max-width: 20.32em) {
+
+        font-size: $font-size-2;
+
+    }
+
+}

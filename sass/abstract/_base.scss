@@ -1,0 +1,36 @@
+@import "./variables";    
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+
+.container {
+
+    display: grid;
+
+    grid-template-rows: [welcome-start] 100vh [welcome-end intro-start] max-content [intro-end project-start] max-content 
+    [project-end contact-start] max-content [contact-end];
+
+    grid-template-columns: [full-start] 100% [full-end];
+
+
+    @media only screen and (max-width: 66.25em) {
+
+        grid-template-rows: [welcome-start] 60vh [welcome-end intro-start] max-content [intro-end project-start] max-content 
+        [project-end contact-start] max-content [contact-end];
+
+    }
+
+
+}

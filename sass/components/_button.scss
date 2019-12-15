@@ -1,0 +1,237 @@
+@import "../abstract/animation";
+
+.button {
+
+    &--welcome {
+
+        width: 18rem;
+        height: auto;
+
+        padding: 1rem 1rem;
+
+        
+
+        background-color: transparent;
+        
+
+        border: .2rem solid white;
+
+        cursor: pointer;
+        outline: none;
+
+        
+
+        animation-name: arrow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+
+        @media only screen and (max-width: 20.32em) {
+
+            width: 13rem;
+            height: auto;
+
+        }
+
+
+        a,
+        a:visited,
+        a:active {
+
+            display: block;
+            width: 100%;
+            text-decoration: none;
+
+            font-size: $font-size-2;
+            font-family: $font-style-1;
+
+            color: white;
+
+            transition: all .2s;
+
+            @media only screen and (max-width: 20.32em) {
+
+                font-size: 1.3rem;
+
+            }
+
+            &:hover{
+
+                color: $font-color-1;
+    
+            }
+            
+        }
+
+        a .arrow {
+
+            margin-left: .5rem;
+
+        }
+
+
+    }
+
+
+}
+
+.goToWeb,
+.goToWeb:active,
+.goToWeb:visited {
+
+    display: block;
+    width: 30%;
+    padding: .5rem;
+    margin: 1rem auto;
+
+    text-decoration: none;
+
+    font-size: $font-size-2;
+    font-family: $font-style-1;
+
+    color: $font-color-4;
+
+    border: .2rem solid $font-color-4;
+    
+    transition: all .2s;
+
+    @media only screen and (max-width: 64em) {
+
+                width: 20%;
+                font-size: 1rem;
+
+    }
+
+    &:hover {
+
+        color: white;
+        background-color: $font-color-4;
+
+    }
+
+}
+
+.goToGit,
+.goToGit:active,
+.goToGit:visited {
+
+    display: block;
+    width: 40%;
+    padding: .5rem;
+    margin: 1rem auto;
+
+    text-decoration: none;
+
+    font-size: $font-size-2;
+    font-family: $font-style-1;
+
+    color: $font-color-4;
+    border: .2rem solid $font-color-4;
+
+    transition: all .2s;
+
+    @media only screen and (max-width: 64em) {
+
+        width: 30%;
+        font-size: 1rem;
+
+}
+
+    &:hover {
+
+        color: white;
+        background-color: $font-color-4;
+
+
+    }
+
+
+}
+
+
+.goToWeb__smallScreen,
+.goToWeb_.goToWeb__smallScreen,
+.goToWeb_.goToWeb__smallScreen:visited {
+
+    display: inline-block;
+    
+    padding: .5rem;
+    margin-right: 3rem;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: $font-size-2;
+    font-family: $font-style-1;
+
+    color: $font-color-4;
+
+    border-bottom: .2rem solid $font-color-4;
+    
+    transition: all .2s;
+
+    @media only screen and (max-width: 64em) {
+
+        font-size: 1.3rem;
+
+    }
+
+    @media only screen and (max-width: 40em) {
+
+        margin-right: 1.5rem;
+        font-size: 1rem;
+
+    }
+
+    @media only screen and (max-width: 31.25em) {
+
+        margin-right: 0;
+
+    }
+
+    @media only screen and (max-width: 26.57em) {
+
+        font-size: .8rem;
+
+    }
+
+
+}
+
+
+.goToGit__smallScreen,
+.goToGit__smallScreen:active,
+.goToGit__smallScreen:visited {
+
+    display: inline-block;
+    padding: .5rem;
+
+    text-decoration: none;
+    text-align: center;
+
+    font-size: $font-size-2;
+    font-family: $font-style-1;
+
+    color: $font-color-4;
+    border-bottom: .2rem solid $font-color-4;
+
+    transition: all .2s;
+
+    @media only screen and (max-width: 64em) {
+
+        font-size: 1.3rem;
+
+    }
+
+    @media only screen and (max-width: 40em) {
+
+        font-size: 1rem;
+
+    }
+
+    @media only screen and (max-width: 26.57em) {
+
+        font-size: .8rem;
+
+    }
+
+}
