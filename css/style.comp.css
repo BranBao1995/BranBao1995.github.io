@@ -169,6 +169,39 @@ html {
       .projects__2__text__smallScreen {
         font-size: 1.1rem; } }
 
+.projects__3__text {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+  color: #4dd6eb;
+  transition: all .4s; }
+  @media only screen and (max-width: 83.75em) {
+    .projects__3__text {
+      display: none; } }
+  @media only screen and (max-width: 64em) {
+    .projects__3__text {
+      font-size: 2rem; } }
+  .projects__3__text__smallScreen {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    color: #021433;
+    margin-bottom: 1.4rem; }
+    @media only screen and (max-width: 40em) {
+      .projects__3__text__smallScreen {
+        margin-bottom: 1rem;
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 26.57em) {
+      .projects__3__text__smallScreen {
+        font-size: 1.1rem; } }
+
 .contact__header {
   grid-row: 1 / 2;
   text-align: center;
@@ -472,8 +505,9 @@ html {
       padding-top: 8rem; } }
   .projects__content {
     margin-top: 8rem;
+    padding: 0 2rem;
     display: grid;
-    grid-template-columns: 50% 50%; }
+    grid-template-columns: 1fr 1fr 1fr; }
     @media only screen and (max-width: 26.57em) {
       .projects__content {
         margin-top: 4rem; } }
@@ -483,9 +517,6 @@ html {
     background-position: center;
     grid-column: 1 / 2;
     display: block;
-    width: 60%;
-    height: 60%;
-    height: auto;
     justify-self: end;
     position: relative;
     z-index: 10;
@@ -561,9 +592,7 @@ html {
     background-position: center;
     grid-column: 2 / 3;
     display: block;
-    width: 60%;
-    height: auto;
-    justify-self: start;
+    justify-self: end;
     position: relative;
     z-index: 10;
     transition: all .4s; }
@@ -625,6 +654,81 @@ html {
       display: none; }
       @media only screen and (max-width: 83.75em) {
         .projects__2__smallScreen {
+          position: absolute;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          opacity: 0;
+          transition: all .4s; } }
+  .projects__3 {
+    background-image: url("../../Assets/images/thumbnail_3.png");
+    background-size: cover;
+    background-position: center;
+    grid-column: 3 / 4;
+    display: block;
+    justify-self: start;
+    position: relative;
+    z-index: 10;
+    transition: all .4s; }
+    @media only screen and (max-width: 83.75em) {
+      .projects__3:hover {
+        transform: translateY(-2rem); } }
+    .projects__3:hover .projects__3__text {
+      transform: translateY(6rem);
+      opacity: 1;
+      z-index: 20; }
+      @media only screen and (max-width: 64em) {
+        .projects__3:hover .projects__3__text {
+          transform: translateY(4rem); } }
+    .projects__3:hover .projects__3__buttons {
+      transform: translateY(-2rem);
+      opacity: 1;
+      z-index: 20; }
+    .projects__3:hover .projects__3__smallScreen {
+      opacity: 1;
+      transform: translateY(3rem); }
+      @media only screen and (max-width: 40em) {
+        .projects__3:hover .projects__3__smallScreen {
+          transform: translateY(1rem); } }
+    .projects__3:hover::before {
+      opacity: 1; }
+    .projects__3::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+      opacity: 0;
+      transition: all .4s; }
+      @media only screen and (max-width: 83.75em) {
+        .projects__3::before {
+          display: none; } }
+    .projects__3__image {
+      width: 100%;
+      object-fit: cover; }
+    .projects__3__buttons {
+      display: block;
+      text-align: center;
+      width: 100%;
+      opacity: 0;
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all .4s; }
+      @media only screen and (max-width: 83.75em) {
+        .projects__3__buttons {
+          display: none; } }
+      @media only screen and (max-width: 31.25em) {
+        .projects__3__buttons__smallScreen {
+          display: grid; } }
+    .projects__3__smallScreen {
+      display: none; }
+      @media only screen and (max-width: 83.75em) {
+        .projects__3__smallScreen {
           position: absolute;
           width: 100%;
           display: flex;
