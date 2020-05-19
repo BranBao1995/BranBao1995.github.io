@@ -370,7 +370,7 @@ html {
           display: flex;
           justify-content: space-between;
           padding: 1.2rem;
-          width: 75%;
+          width: 85%;
           background-color: #32faaa;
           color: white;
           font-family: "Raleway", sans-serif; }
@@ -390,7 +390,7 @@ html {
           display: flex;
           justify-content: space-between;
           padding: 1.2rem;
-          width: 85%;
+          width: 90%;
           background-color: #07de7d;
           color: white;
           font-family: "Raleway", sans-serif; }
@@ -410,8 +410,8 @@ html {
           display: flex;
           justify-content: space-between;
           padding: 1.2rem;
-          width: 70%;
-          background-color: #54deb7;
+          width: 85%;
+          background-color: #32faaa;
           color: white;
           font-family: "Raleway", sans-serif; }
           @media only screen and (max-width: 20.32em) {
@@ -430,8 +430,8 @@ html {
           display: flex;
           justify-content: space-between;
           padding: 1.2rem;
-          width: 65%;
-          background-color: #79d4b7;
+          width: 90%;
+          background-color: #07de7d;
           color: white;
           font-family: "Raleway", sans-serif; }
           @media only screen and (max-width: 20.32em) {
